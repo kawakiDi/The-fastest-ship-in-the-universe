@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  color: white;
+  background-color: #2A292E;
+  overflow: hidden;
+}
+
+input {
+  font-family: inherit;
+  color: currentColor;
+}
+
+img,
+.indication {
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.universe {
+  width: clamp(330px, 44vw, 1230px);
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.ship-type {
+  margin-bottom: 20px;
+}
+
+.ship {
+  display: grid;
+  grid-template-columns: 25px calc(clamp(330px, 44vw, 1230px)) 25px;
+  min-height: clamp(40px, 5vw, 150px);
+  margin-left: -25px;
+  margin-bottom: 20px;
+}
+
+.ship__button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: currentColor;
+  font-size: 40px;
+  text-shadow: 0 0 4px currentColor;
+}
+
+.ship__button:hover {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.wrapper__image {
+  position: relative;
+}
+
+.ship__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info {
+  position: relative;
+  margin-bottom: 30px;
+  background-color: rgb(42 41 46 / 0.8);
+  z-index: 2;
+}
+
+.info__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.info__section:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.info__section div {
+  text-shadow: 0 0 4px currentColor;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.info__section div,
+.indication {
+  padding-right: 15px;
+}
+
+.indication {
+  border: none;
+  background-color: transparent;
+  text-align: end;
+  font-size: 18px;
+  text-shadow: 0 0 4px currentColor;
+  outline: none;
+}
+
+.star {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.star-animation {
+  animation-name: movement;
+  animation-duration: 4000s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}

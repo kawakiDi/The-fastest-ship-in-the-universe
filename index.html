@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distance to the stars</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <main class="main">
+    <div class="universe">
+      <div class="header">
+        <img class="logo" src="./images/logo.webp" alt="The fastest ship in the universe">
+      </div>
+
+      <div class="ship-type">
+        <img class="ship-type__image" src="./images/type-ships/relativistic-ships.webp" alt="Type of ship">
+      </div>
+
+      <div class="ship">
+        <button class="ship__button button-left" type="button"> &lt;</button>
+        <div class="wrapper__image">
+          <img class="ship__image" src="./images/ships-g/1.webp" alt="Ship" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/2.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/3.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/4.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/5.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/6.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/7.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/8.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/9.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/10.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/11.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/12.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/13.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/14.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/15.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/16.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/17.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/18.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/19.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/20.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/21.webp" alt="Ship" style="display: none;" loading="lazy">
+          <img class="ship__image" src="./images/ships-g/22.webp" alt="Ship" style="display: none;" loading="lazy">
+        </div>
+        <button class="ship__button button-right" type="button">&gt;</button>
+      </div>
+
+      <div class="info">
+        <div class="info__section">
+          <div>distance in light years</div>
+          <img src="./images/line.jpg" alt="">
+          <input class="indication light-years" type="text" value="0">
+        </div>
+        <div class="info__section">
+          <div>time in earth years</div>
+          <img src="./images/line.jpg" alt="">
+          <input class="indication time" type="text" value="0">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <canvas class="star star-animation" width="100" height="100"></canvas>
+
+  <script src="./js/decimal.js/decimal.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
