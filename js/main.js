@@ -160,7 +160,7 @@ window.addEventListener('keydown', (event) => {
 // звёздное небо
 ctx = star.getContext('2d')
 star.width = innerWidth
-star.height = innerWidth
+star.height = innerHeight
 ctx.fillStyle = "white"
 
 function getRandomInt(min, max) {
@@ -170,7 +170,7 @@ function getRandomInt(min, max) {
 for (let i = 0; i <= 200; i++) {
   let x, y, r
   r = getRandomInt(1, 3)
-  x = getRandomInt(0, innerWidth)
-  y = getRandomInt(0, innerWidth)
+  x = getRandomInt(0, innerWidth * 2)
+  y = getRandomInt(0, innrtHeight * 2)
   ctx.fillRect(x, y, r, r)
 }
