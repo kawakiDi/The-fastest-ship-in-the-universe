@@ -167,10 +167,16 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
+if (innerWidth > innerHeight) {
+  wrapper = innerWidth
+} else {
+  wrapper = innerHeight
+}
+
 for (let i = 0; i <= 200; i++) {
   let x, y, r
   r = getRandomInt(1, 3)
-  x = getRandomInt(0, innerWidth * 2)
-  y = getRandomInt(0, innrtHeight * 2)
+  x = getRandomInt(0, wrapper)
+  y = getRandomInt(0, wrapper)
   ctx.fillRect(x, y, r, r)
 }
