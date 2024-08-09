@@ -123,7 +123,7 @@ img,
 
 .star-animation {
   animation-name: movement;
-  animation-duration: 3000s;
+  animation-duration: 4000s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
