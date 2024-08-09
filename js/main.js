@@ -159,24 +159,25 @@ window.addEventListener('keydown', (event) => {
 
 // звёздное небо
 ctx = star.getContext('2d')
-star.width = innerWidth
-star.height = innerHeight
+
+if (innerWidth > innerHeight) {
+  innerValue = innerWidth
+} else {
+  innerValue = innerHeight
+}
+
+star.width = innerValue
+star.height = innerValue
 ctx.fillStyle = "white"
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-if (innerWidth > innerHeight) {
-  wrapper = innerWidth
-} else {
-  wrapper = innerHeight
-}
-
 for (let i = 0; i <= 200; i++) {
   let x, y, r
   r = getRandomInt(1, 3)
-  x = getRandomInt(0, wrapper)
-  y = getRandomInt(0, wrapper)
+  x = getRandomInt(0, innerValue)
+  y = getRandomInt(0, innerValue)
   ctx.fillRect(x, y, r, r)
 }
